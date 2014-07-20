@@ -1,0 +1,23 @@
+#!/bin/sh
+#/etc/init.d/rsproxy
+
+export RS_DIR=/tmp/rs
+export FOREVER_DIR=/tmp/rs/forever
+export RSPROXY_PATH=/Users/mw/Projekte/node/remotesupport/rsproxy
+
+cd $RSPROXY_PATH
+
+case "$1" in
+  start)
+  exec forever start --sourceDir=$RSPROXY_PATH -p $FOREVER_DIR --cwd $RSPROXY_PATH rsproxy2.js
+  ;;
+stop)
+  exec forever stop --sourceDir=$RSPROXY_PATH -p $FOREVER_DIR rsproxy2.js
+  ;;
+*)
+  echo "Usage: $0 {start|stop}"
+  exit 1
+  ;;
+esac
+
+exit 0

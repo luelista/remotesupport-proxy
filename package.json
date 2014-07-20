@@ -1,0 +1,25 @@
+{
+  "name": "Remotesupport-Proxy",
+  "description": "",
+  "version": "0.0.4",
+  "keywords": [
+    "remotesupport"
+  ],
+  "dependencies": {
+    "multiplex-stream": "^1.0.0",
+    "netmask": "^1.0.4",
+    "pem": "^1.4.1",
+    "sequelize": "^1.7.9",
+    "underscore": "^1.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jangosteve/jquery-easytabs.git"
+  },
+  "licenses": [
+    {
+      "name": "GPL"
+    }
+  ],
+  "homepage": "http://max.weller.io"
+}
