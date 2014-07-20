@@ -10,7 +10,8 @@
     "netmask": "^1.0.4",
     "pem": "^1.4.1",
     "sequelize": "^1.7.9",
-    "underscore": "^1.6.0"
+    "underscore": "^1.6.0",
+    "sqlite3": "^2.2.4"
   },
   "repository": {
     "type": "git",
